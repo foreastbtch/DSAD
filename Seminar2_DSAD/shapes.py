@@ -64,6 +64,6 @@ class rectangle(shape):
         sir += ("(" + str(self.x0) + "," + str(self.y0) + "," +
                 str(self.w) + "," + str(self.h) + ")")
         return sir
-
     def perimetru(self):
         return 2 * (self.w + self.h)
+

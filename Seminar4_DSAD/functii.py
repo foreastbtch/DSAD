@@ -16,7 +16,7 @@ def nan_replace(t):
 
 
 def diversitate_(t, variabile):
-    assert isinstance(t,pd.Series)
+    assert isinstance(t, pd.Series)
     x = t[variabile].values
     s = np.sum(x)
     p = x / s
@@ -30,6 +30,7 @@ def diversitate_(t, variabile):
         index=["Shannon", "Simpson", "Inverse Simpson"]
     )
     return s_div
+
 
 def diversitate(t):
     assert isinstance(t, pd.Series)

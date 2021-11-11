@@ -35,14 +35,14 @@ g3.to_csv("PopulatieEtniiMacroRegiuni.csv")
 
 # Calcul diversitate la nivel de localitate
 
-div1 = t1[variabile+["City_x"]].apply(func=f.diversitate, axis=1)
+div1 = t1[variabile + ["City_x"]].apply(func=f.diversitate, axis=1)
 # print(div1)
 div1.to_csv("DiversitateLocalitati.csv")
 
 # Calcul diversitate la nivel de judete
-div2 = g1[variabile].apply(func=f.diversitate_, axis=1,variabile=variabile)
+div2 = g1[variabile].apply(func=f.diversitate_, axis=1, variabile=variabile)
 div2.to_csv("DiversitateJudete.csv")
 
 # Calcul diversitate la nivel de regiune...
-div3 = g2[variabile].apply(func=f.diversitate_, axis=1,variabile=variabile)
+div3 = g2[variabile].apply(func=f.diversitate_, axis=1, variabile=variabile)
 div3.to_csv("DiversitateRegiuni.csv")
